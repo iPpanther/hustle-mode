@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var rocket: UIImageView!
     @IBOutlet weak var hustleLbl: UILabel!
     @IBOutlet weak var onLbl: UILabel!
+    @IBOutlet weak var playAgainBtn: UIButton!
     
     var player: AVAudioPlayer!
     
@@ -46,7 +47,21 @@ class ViewController: UIViewController {
         }) { (finished) in
             self.hustleLbl.isHidden = false
             self.onLbl.isHidden = false
+            self.playAgainBtn.isHidden = false
         }
+    }
+    
+    @IBAction func againBtnPressed(_ sender: Any) {
+        
+        cloudHolder.isHidden = true
+        darkBlueBG.isHidden = false
+        powerBtn.isHidden = false
+        
+        hustleLbl.isHidden = true
+        onLbl.isHidden = true
+        playAgainBtn.isHidden = true
+        
+        rocket.frame = CGRect(x: 2, y: 489, width: 412, height: 318)
     }
     
 }
