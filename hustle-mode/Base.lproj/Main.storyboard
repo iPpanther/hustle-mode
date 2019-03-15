@@ -56,6 +56,17 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyJ-v9-qCL">
+                                        <rect key="frame" x="258" y="815" width="114" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Play again">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="againBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TsS-n6-FbF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.56470588235294117" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -68,6 +79,7 @@
                         <outlet property="darkBlueBG" destination="WCp-Gx-wdb" id="zW2-r1-er9"/>
                         <outlet property="hustleLbl" destination="3RV-aB-ZO9" id="KWW-cl-vLV"/>
                         <outlet property="onLbl" destination="wfd-ID-mA4" id="6d5-f3-C46"/>
+                        <outlet property="playAgainBtn" destination="HyJ-v9-qCL" id="EaB-Od-VnO"/>
                         <outlet property="powerBtn" destination="NUF-mN-7DG" id="wG8-ts-ts5"/>
                         <outlet property="rocket" destination="fEu-KC-0zn" id="0lh-Vd-QuP"/>
                     </connections>
